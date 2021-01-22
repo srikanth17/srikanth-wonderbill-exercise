@@ -22,6 +22,8 @@ const paymentsSlice = createSlice({
           return {
             ...action.payload,
           };
+        } else {
+          return payment;
         }
       });
     },
